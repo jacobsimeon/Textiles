@@ -14,6 +14,9 @@
 		16F80FC22055C05700B2823E /* Cartfile.private in Resources */ = {isa = PBXBuildFile; fileRef = 16F80FC12055C05700B2823E /* Cartfile.private */; };
 		16F80FC62055C70C00B2823E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F80FC42055C70C00B2823E /* Nimble.framework */; };
 		16F80FC72055C70C00B2823E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F80FC52055C70C00B2823E /* Quick.framework */; };
+		440643801B4ADAE6901C1625 /* Textile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440648817AAB89A4401513D1 /* Textile.swift */; };
+		4406487D8963FFB1EB60F71B /* matchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4406454629CD84705E7F854E /* matchers.swift */; };
+		440648A2513325428D3F3CFF /* Ligature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440640AF8E825F5CF7BB1A6E /* Ligature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		16F80FC12055C05700B2823E /* Cartfile.private */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.private; sourceTree = "<group>"; };
 		16F80FC42055C70C00B2823E /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		16F80FC52055C70C00B2823E /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		440640AF8E825F5CF7BB1A6E /* Ligature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ligature.swift; sourceTree = "<group>"; };
+		4406454629CD84705E7F854E /* matchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matchers.swift; sourceTree = "<group>"; };
+		440648817AAB89A4401513D1 /* Textile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Textile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 			children = (
 				16F80FA82055C03800B2823E /* Textiles.h */,
 				16F80FA92055C03800B2823E /* Info.plist */,
+				440648817AAB89A4401513D1 /* Textile.swift */,
+				440640AF8E825F5CF7BB1A6E /* Ligature.swift */,
 			);
 			path = Textiles;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			children = (
 				16F80FB32055C03800B2823E /* TextilesTests.swift */,
 				16F80FB52055C03800B2823E /* Info.plist */,
+				4406454629CD84705E7F854E /* matchers.swift */,
 			);
 			path = TextilesTests;
 			sourceTree = "<group>";
@@ -165,7 +174,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Jacob Morris";
 				TargetAttributes = {
 					16F80FA42055C03800B2823E = {
@@ -220,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440643801B4ADAE6901C1625 /* Textile.swift in Sources */,
+				440648A2513325428D3F3CFF /* Ligature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16F80FB42055C03800B2823E /* TextilesTests.swift in Sources */,
+				4406487D8963FFB1EB60F71B /* matchers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +268,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -263,6 +276,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -316,6 +330,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -323,6 +338,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
