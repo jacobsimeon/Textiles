@@ -6,6 +6,6 @@
 import Foundation
 
 public enum Ligature: Int {
-  case noLigature = 0
-  case defaultLigature = 1
+    case noLigature = 0
+    case defaultLigature = 1
 }
